@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+/.vs
+/ConsoleApplication1/.vs/ConsoleApplication1/v15
+/ConsoleApplication1/ConsoleApplication1/Debug/ConsoleA.2EACA4FA.tlog
+/ConsoleApplication1/ConsoleApplication1/Debug
+/ConsoleApplication1/Debug
