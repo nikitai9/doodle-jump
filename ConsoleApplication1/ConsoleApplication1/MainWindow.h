@@ -2,6 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "Doodle.h"
+#include "Platform.h"
+
 
 using namespace sf;
 
@@ -15,6 +17,7 @@ class MainWindow : public sf::RenderWindow
 	sf::Font font;
 	sf::Sprite sprite;
 	Doodle *player;
+	Platform *platform;
 
 public:
 	MainWindow(int width, int height, std::string name) : sf::RenderWindow(sf::VideoMode(width, height), name) {
@@ -23,6 +26,8 @@ public:
 			throw;
 		}
 		this->player = new Doodle(200, 600);
+		this->platform = new Platform(200,560);
+		this->platform = new Platform(rand() % 400, rand() % 800);
 	}
 	void show() {
 		while (this->isOpen())
