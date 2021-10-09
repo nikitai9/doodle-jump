@@ -26,15 +26,14 @@ public:
 	}
 
 	void moveRight() {
-		this->x++;
-		this->y++;
+		if (Keyboard::isKeyPressed(Keyboard::Right)) x += 4;
 	}
 	void moveLeft() {
-		this->x--;
-		this->y++;
+		if (Keyboard::isKeyPressed(Keyboard::Left)) x -= 4;
 	}
 	void Jump() {
-		this->y;
+		;
+
 	}
 
 };

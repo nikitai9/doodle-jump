@@ -25,16 +25,4 @@ public:
 		return this->sprite;
 	}
 
-	void moveRight() {
-		this->x++;
-		this->y++;
-	}
-	void moveLeft() {
-		this->x--;
-		this->y++;
-	}
-	void Jump() {
-		this->y;
-	}
-
 };
